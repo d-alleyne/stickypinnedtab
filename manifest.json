@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Sticky Pinned Tab",
 	"description": "Mimic Google Chrome's Pinned Tab behaviour in Firefox",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"icons": {
 		"64": "icons/icon.png"
 	},
@@ -10,12 +10,5 @@
 		"scripts": [
 			"background_script.js"
 		]
-	},
-	"browser_action": {
-		"default_icon": {
-			"64": "icons/icon.png"
-		},
-		"default_popup": "browserAction/index.html",
-		"default_title": "Sticky Pinned Tab"
 	}
 }
