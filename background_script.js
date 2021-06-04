@@ -1,25 +1,18 @@
-const pinnedTabs = new Map();
+const pinnedTabs = new Set();
 const getPinnedTabs = () => browser.tabs.query({ pinned: true });
 
 getPinnedTabs().then((tabs) =>
   tabs.forEach((tab) =>
-    pinnedTabs.set(tab.id, { windowId: tab.windowId, pinned: true })
+    pinnedTabs.add(tab.id)
   )
 );
 
-const onPinned = (tabId, changeInfo, tab) => {
+const onPinned = (tabId, changeInfo) => {
   // the tab has been unpinned
-  if (
-    pinnedTabs.has(tabId) &&
-    pinnedTabs.get(tabId).windowId === tab.windowId &&
-    !changeInfo.pinned
-  ) {
+  if (pinnedTabs.has(tabId) && !changeInfo.pinned) {
     pinnedTabs.delete(tabId);
   } else {
-    pinnedTabs.set(tabId, {
-      windowId: tab.windowId,
-      pinned: changeInfo.pinned,
-    });
+    pinnedTabs.add(tabId);
   }
 };
 
