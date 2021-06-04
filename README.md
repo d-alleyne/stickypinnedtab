@@ -1,7 +1,8 @@
 ## Sticky Pinned Tab
-Sticky Pinned Tab is an attempt to mimic Google Chrome's Pinned Tab behavior in Firefox.
+Sticky Pinned Tab maintains a tab's _pinned_ property when moved between windows. This brings a feature found in Chromium-based browsers (Chrome, Edge, Opera, etc.) to Firefox users.
 
 ### Motivation
-Firefox's current pinned tab behavior is marked as _wontfix_ in [Bugzilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1505014), but a few Chrome users would prefer
-if Firefox's pinned tab behaviour mimicked Google Chrome's. This is my attempt to help those users with the transition.
 
+Moving a pinned tab between Firefox windows causes it to be unpinned. On researching possible solutions I found [Bug 1505014](https://bugzilla.mozilla.org/show_bug.cgi?id=1505014) which is marked as *wontfix*.
+
+This extension is my solution for users that wish Bug 1505014 was fixed.
