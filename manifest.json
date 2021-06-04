@@ -1,14 +1,18 @@
 {
-	"manifest_version": 2,
-	"name": "Sticky Pinned Tab",
-	"description": "Moving a pinned tab between browser windows keeps it pinned, just like Chromium-based browsers",
-	"version": "0.0.4",
-	"icons": {
-		"64": "icons/icon.png"
-	},
-	"background": {
-		"scripts": [
-			"background_script.js"
-		]
-	}
+  "manifest_version": 2,
+  "name": "Sticky Pinned Tab",
+  "description": "Keeps a tab pinned when moving between browser windows, just like Chromium-based browsers",
+  "version": "0.9.5",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "stickypinnedtab@bankinginbim.com"
+    }
+  },
+
+  "background": {
+    "scripts": ["background_script.js"]
+  }
 }
