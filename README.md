@@ -3,6 +3,12 @@ Sticky Pinned Tab maintains a tab's _pinned_ property when moved between windows
 
 ### Motivation
 
-Moving a pinned tab between Firefox windows causes it to be unpinned. On researching possible solutions I found [Bug 1505014](https://bugzilla.mozilla.org/show_bug.cgi?id=1505014) which is marked as *wontfix*.
+Moving a pinned tab between Firefox windows causes it to be unpinned. On researching possible solutions I found [bug 1505014](https://bugzilla.mozilla.org/show_bug.cgi?id=1505014) which won't be fixed. This extension fixes that bug.
 
-This extension is my solution for users that wish Bug 1505014 was fixed.
+### [Temporary Installation](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/)
+1. Clone the repository to a folder on your hard drive.
+2. Open Firefox
+3. Enter "about:debugging" in the URL bar
+4. Click "This Firefox"
+5. Click "Load Temporary Add-on"
+6. Open the cloned repository folder and select any file inside the directory (e.g. [manifest.json](manifest.json)).
